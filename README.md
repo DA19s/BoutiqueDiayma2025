@@ -198,7 +198,7 @@ Pour lancer : double-cliquer sur **Diayma.exe** dans le dossier publié. Une con
 
 ## 10. Lien vers l'exécutable
 
-Lien Google Drive (dossier compressé en .zip) : **(lien à ajouter)**
+Lien Google Drive (dossier compressé en .zip) : https://drive.google.com/file/d/1jaKed0GLGGka66wE90J2SMtLtKEZHuBo/view?usp=sharing
 
 Décompresser le zip, puis lancer `Diayma.exe` et ouvrir http://localhost:5000
 
