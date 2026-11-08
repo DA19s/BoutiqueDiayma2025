@@ -34,6 +34,9 @@ namespace P2FixAnAppDotNetCode.Models.Services
                 case "Spanish":
                     culture = "es";
                     break;
+                case "Wolof":
+                    culture = "wo";
+                    break;
                 default:
                     culture = "en";
                     break;
@@ -46,9 +49,16 @@ namespace P2FixAnAppDotNetCode.Models.Services
         /// </summary>
         public void UpdateCultureCookie(HttpContext context, string culture)
         {
+            RequestCulture requestCulture = new RequestCulture(culture);
+
+            // Pour le wolof : les textes sont en wolof mais on garde la culture
+            // francaise pour le format des nombres, des prix et des dates
+            if (culture == "wo")
+                requestCulture = new RequestCulture("fr", "wo");
+
             context.Response.Cookies.Append(
                 CookieRequestCultureProvider.DefaultCookieName,
-                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)));
+                CookieRequestCultureProvider.MakeCookieValue(requestCulture));
         }
     }
 }
