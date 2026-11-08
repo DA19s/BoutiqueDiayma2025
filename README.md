@@ -2,7 +2,7 @@
 
 TD C# et Technologies .NET - ESP / UCAD - Département Génie Informatique - 2026/2027
 
-Étudiant : **NOM Prénom** - Classe : **...**
+Étudiant : **DAN AZOUMI Ibrahim** - Classe : **M2 GLSI soir**
 
 Dépôt : https://github.com/DA19s/BoutiqueDiayma2025
 
